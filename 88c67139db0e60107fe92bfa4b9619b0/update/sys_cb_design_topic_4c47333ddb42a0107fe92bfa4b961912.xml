@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Update NeedIt Records">c447333ddb42a0107fe92bfa4b961910</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"29904d89f6714fcf8028591d26104932","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"29904d89f6714fcf8028591d26104932"}],"goals":[{"name":"primary","trigger_id":"29904d89f6714fcf8028591d26104932","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"I can help you find and update NeedIt records for a type of request.\", vaContext.getRequesterLang())"},"id":"a996d8558b9f4a9db53bd25bd5170e94","name":"Start"},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Ask again when you need to update other NeedIt records.\", vaContext.getRequesterLang())"},"id":"c26742c734e04fe388c487b0f1ca6b0d","name":"End"},{"type":"ChoiceInputPrompt","expression_mode":"simple","id":"8aed543a943f4591aafe31ec437296ff","name":"NeedIt Type","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"b6bbeec0120f4537b14d716d8bc3065c","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which type of NeedIt record would you like to view?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true}}],"edges":[{"type":"Edge","source_node_id":"a996d8558b9f4a9db53bd25bd5170e94","target_node_id":"8aed543a943f4591aafe31ec437296ff","id":"18d65f11e94f439ea3108965ce14cc46"},{"type":"Edge","source_node_id":"8aed543a943f4591aafe31ec437296ff","target_node_id":"c26742c734e04fe388c487b0f1ca6b0d","id":"c5d25315755640af82a5db99a2fce645"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text"},{"type":"Choice","choices":[{"name":"Legal","element":"legal"},{"name":"Facilities","element":"facilities"},{"name":"Human Resources","element":"human resources"}],"id":"b6bbeec0120f4537b14d716d8bc3065c","name":"needit_type","formatType":"text"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"88c67139db0e60107fe92bfa4b9619b0","domain":"global","topic_type":"STANDARD","channels":[],"id":"ffc7793ddb0e60107fe92bfa4b961917","name":"_PRVW__4447333da942a010de7d7e83469f340b","key_phrases":["Update NeedIt Records"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"design_category":"caf6793ddb0e60107fe92bfa4b9619b2","library":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>ffc7793ddb0e60107fe92bfa4b961917</design_topic_id>
+        <name>_PRVW__4447333da942a010de7d7e83469f340b</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-01 17:55:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4c47333ddb42a0107fe92bfa4b961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt Virtual Agent Conversations" source="x_572229_needit_vi">88c67139db0e60107fe92bfa4b9619b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt Virtual Agent Conversations">88c67139db0e60107fe92bfa4b9619b0</sys_scope>
+        <sys_update_name>sys_cb_design_topic_4c47333ddb42a0107fe92bfa4b961912</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-01 17:55:57</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
